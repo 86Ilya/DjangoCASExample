@@ -1,5 +1,7 @@
 # DjangoCASExample
 ## Steps
+- docker-compose build
+- docker-compose up
 - visit http://0.0.0.0:8080/noauthapp/ (User is anonymous)
 - visit http://0.0.0.0:8080/withauthapp/ (authentication is required)
 - authenticate
