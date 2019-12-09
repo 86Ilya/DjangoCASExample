@@ -1,0 +1,14 @@
+Django==2.2.7
+entrypoints==0.3
+flake8==3.7.9
+mccabe==0.6.1
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pytz==2019.3
+sqlparse==0.3.0
+uWSGI==2.0.18
+psycopg2-binary
+rpdb
+gunicorn
+django-mama-cas
+django-cas-ng

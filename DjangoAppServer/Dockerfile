@@ -1,0 +1,20 @@
+from python:3.6
+
+
+ARG DATABASE_NAME
+ARG DATABASE_USER
+ARG DATABASE_PASSWORD
+ARG DATABASE_HOST
+ARG SECRET_KEY
+
+
+ENV DATABASE_NAME=$DATABASE_NAME
+ENV DATABASE_USER=$DATABASE_USER
+ENV DATABASE_PASSWORD=$DATABASE_PASSWORD
+ENV DATABASE_HOST=$DATABASE_HOST
+ENV SECRET_KEY=$SECRET_KEY
+
+workdir /app
+COPY . /app
+RUN apt update && apt install -y uwsgi-plugin-python3 vim mc telnet && apt clean
+RUN pip install -r /app/requirements.txt
